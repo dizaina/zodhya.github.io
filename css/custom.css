@@ -1,0 +1,679 @@
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+
+/*
+Change Quick Sidebar Width
+*/
+
+/*
+.page-quick-sidebar-wrapper {
+  right: -370px;
+  width: 370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content .page-sidebar-wrapper {
+  margin-left: -370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content .page-footer {
+  margin-right: 370px;
+  margin-left: -370px;
+}
+
+.page-sidebar-reversed.page-quick-sidebar-open.page-quick-sidebar-push-content .page-sidebar-wrapper {
+  margin-right: 370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content.page-quick-sidebar-full-height .page-header {
+  margin-left: -370px;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-list {
+  width: 370px !important;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-item {
+  width: 370px !important;
+  margin-left: 370px;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-content-item-shown .page-quick-sidebar-list {
+  margin-left: -370px;
+}
+*/
+body{
+  background-color: #fff;
+}
+.padding-left-0{
+  padding-left: 0;
+}
+.page-sidebar-closed .page-content-wrapper .landing-page-content, .page-sidebar-fixed.page-sidebar-closed .landing-page-footer{
+  margin-left: 0px !important;
+}
+/*************** rocket animation******************/
+.landing-search {
+    /*padding-top: 30px;*/
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+#pageWrap {
+    width: 100%;
+    overflow: hidden;
+}
+.portlet.light.bordered{
+  border: 0px;
+}
+#pagebarclosed{
+	min-height: 569px; margin-left: 366px; margin-top: 0px; padding: 25px 20px 10px; transition: 0.5s linear; background: #fff;;border: 1px solid #ddd;
+}
+.mt-user-time i{
+  /*color: #e29b14;*/
+  color: #038e9e;
+  font-size: 16px;
+  padding-top: 5px;
+}
+.mt-user-name{
+  font-size: 14px;
+  width: 100%;
+  float: left;
+  font-weight: bold;
+}
+.mt-head-label{
+  position: relative;
+    top: -30px;
+    left: 0px;
+}
+#rocket {
+    display: block;
+}
+
+
+/*=============================================
+[ Inactive State Styles ]
+==============================================*/
+
+.rocket_inner {
+    transform: translateY(15px) translateX(-3px);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.icon_circle {
+    transition: .2s;
+    fill: #22303e;
+}
+
+.large_window_path {
+    transition: .2s;
+    fill: #22303e;
+}
+
+.small_window_path {
+    fill: #22303e;
+}
+
+.wing_shadow {
+    fill: #34495e;
+}
+
+.rocket_bottom {
+    fill: #34495e
+}
+
+.rocket_base {
+    fill: #34495e
+}
+
+.rocket_shadow {
+    fill: #34495e
+}
+
+.window_grandient {
+    stop-color: #2DCB73
+}
+
+.window_grandient1 {
+    stop-color: #2AC16D
+}
+
+.window_grandient2 {
+    stop-color: #29B968
+}
+
+.window_grandient3 {
+    stop-color: #28B767
+}
+
+.wing_base {
+    fill: #34495e
+}
+
+.fire_path {
+    fill: #FC0
+}
+
+
+/*=============================================
+[ Hover Styles ]
+==============================================*/
+
+.rocket_wrap .rocket_base {
+    fill: #f0f0f0 !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .rocket_shadow {
+    fill: #EEE !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .icon_circle {
+    fill: #fff !important;
+    stroke: #fff !important;
+    stroke-width: 7px !important;
+}
+
+.rocket_wrap .small_window_path {
+    fill: #28B767 !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .wing_shadow {
+    display: block !important;
+    fill: #FC9252 !important;
+}
+
+.rocket_wrap .wing_base {
+    fill: #E16E36 !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .rocket_bottom {
+    fill: #2DCB73 !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .large_window_path {
+    fill: url(#SVGID_2_) !important;
+    stroke-width: 0px !important;
+}
+
+.rocket_wrap .rocket_inner {
+    transform: translateY(-38px) translateX(-100px) !important;
+}
+
+
+/*=============================================
+[ Animation Classes ]
+==============================================*/
+
+.fire {
+    display: none;
+    animation-delay: 0s;
+    fill-opacity: 1;
+    animation-timing-function: ease-in;
+    stroke-width: 0px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    animation-direction: normal;
+}
+
+.rocket_wrap #fireLeft {
+    display: block;
+    animation-delay: 0s;
+    animation-name: fireLeft, fillOpacity1;
+    animation-duration: 1.2s;
+}
+
+.rocket_wrap #fireMiddle {
+    display: block;
+    animation-delay: 0s;
+    animation-name: fireMiddle, fillOpacity1;
+    animation-duration: 1s;
+}
+
+.rocket_wrap #fireRight {
+    display: block;
+    animation-delay: 0s;
+    animation-name: fireRight, fillOpacity1;
+    animation-duration: 1.3s;
+}
+
+.rocket_wrap #fireSmallLeft {
+    display: block;
+    animation-delay: 0s;
+    animation-name: fireSmall, fillOpacity2;
+    animation-duration: 1.3s;
+    transform-origin: bottom;
+}
+
+.rocket_wrap #fireSmallRight {
+    display: block;
+    animation-delay: 0.3s;
+    animation-name: fireSmall, fillOpacity3;
+    animation-duration: 1.6s;
+    transform-origin: bottom;
+}
+
+
+/*=============================================
+[ KeyFrame Animations ]
+==============================================*/
+
+@keyframes fireSmall {
+    10% {
+        transform: rotate(17deg) translateY(1px)
+    }
+    20% {
+        transform: rotate(-13deg) translateY(2px)
+    }
+    30% {
+        transform: rotate(21deg) translateY(3px)
+    }
+    40% {
+        transform: rotate(-34deg)translateY(4px)
+    }
+    50% {
+        transform: rotate(24deg) translateY(5px)
+    }
+    60% {
+        transform: rotate(-17deg) translateY(6px)
+    }
+    70% {
+        transform: rotate(31deg) translateY(7px)
+    }
+    80% {
+        transform: rotate(-28deg) translateY(8px)
+    }
+    90% {
+        transform: rotate(14deg) translateY(9px)
+    }
+    99% {
+        transform: rotate(0deg) translateY(10px)
+    }
+}
+
+@keyframes fireLeft {
+    6% {
+        transform: rotate(25deg)
+    }
+    15% {
+        transform: rotate(-19deg)
+    }
+    25% {
+        transform: rotate(25deg)
+    }
+    32% {
+        transform: rotate(-30deg)
+    }
+    46% {
+        transform: rotate(22deg)
+    }
+    54% {
+        transform: rotate(-29deg)
+    }
+    61% {
+        transform: rotate(32deg)
+    }
+    74% {
+        transform: rotate(-9deg)
+    }
+    83% {
+        transform: rotate(16deg)
+    }
+    99% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes fireMiddle {
+    10% {
+        transform: rotate(25deg)
+    }
+    20% {
+        transform: rotate(-25deg)
+    }
+    30% {
+        transform: rotate(30deg)
+    }
+    40% {
+        transform: rotate(-22deg)
+    }
+    50% {
+        transform: rotate(29deg)
+    }
+    60% {
+        transform: rotate(-45deg)
+    }
+    70% {
+        transform: rotate(37deg)
+    }
+    80% {
+        transform: rotate(-15deg)
+    }
+    90% {
+        transform: rotate(16deg)
+    }
+    99% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes fireRight {
+    15% {
+        transform: rotate(17deg)
+    }
+    23% {
+        transform: rotate(-13deg)
+    }
+    37% {
+        transform: rotate(21deg)
+    }
+    45% {
+        transform: rotate(-34deg)
+    }
+    54% {
+        transform: rotate(24deg)
+    }
+    67% {
+        transform: rotate(-17deg)
+    }
+    72% {
+        transform: rotate(31deg)
+    }
+    84% {
+        transform: rotate(-28deg)
+    }
+    96% {
+        transform: rotate(14deg)
+    }
+    99% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes fillOpacity1 {
+    0% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    50% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    100% {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+    }
+}
+
+@keyframes fillOpacity2 {
+    0% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    25% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    100% {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+    }
+}
+
+@keyframes fillOpacity3 {
+    0% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    67% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+    100% {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+    }
+}
+
+@keyframes rocektMove {
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(20px)
+    }
+}
+/***********************/
+
+.text-header {
+    font-size: 42px;
+    /*padding-top: 25px;*/
+    padding-top: 8px;
+    margin-left: -65px;
+}
+
+.text-header span {
+    color: #f89d0f;
+}
+
+.tasks-widget:after {
+    clear: both
+}
+
+.tasks-widget .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.tasks-widget .task-list>li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #F4F6F9
+}
+
+.tasks-widget .task-list>li:hover {
+    background: #F4F6F9
+}
+
+.tasks-widget .task-list>li.last-line {
+    border-bottom: none
+}
+
+.tasks-widget .task-list>li.task-done {
+    background: #f6f6f6
+}
+
+.tasks-widget .task-list>li.task-done:hover {
+    background: #f4f4f4
+}
+
+.tasks-widget .task-list>li.task-done .task-title-sp {
+    text-decoration: line-through
+}
+
+.tasks-widget .task-list>li>.task-bell {
+    margin-left: 10px
+}
+
+.tasks-widget .task-list>li>.task-checkbox {
+    float: left;
+    width: 30px
+}
+
+.tasks-widget .task-list>li>.task-checkbox input[type=checkbox] {
+    cursor: pointer
+}
+
+.tasks-widget .task-list>li>.task-title {
+    color: #838FA1;
+    margin-right: 10px
+}
+
+.tasks-widget .task-list>li>.task-title .task-title-sp {
+    margin-right: 5px
+}
+
+.tasks-widget .task-list>li .task-config-btn {
+    margin-top: -1px
+}
+
+.tasks-widget .task-list>li>.task-config {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 10px
+}
+
+.tasks-widget .task-list>li:hover>.task-config {
+    display: block;
+    margin-bottom: 0!important
+}
+
+.tasks-widget .task-footer {
+    margin-top: 5px
+}
+
+.tasks-widget .task-footer:after,
+.tasks-widget .task-footer:before {
+    content: " ";
+    display: table
+}
+
+.tasks-widget .task-footer:after {
+    clear: both
+}
+
+@media only screen and (max-width:480px) {
+    .tasks-widget .task-config-btn {
+        float: inherit;
+        display: block
+    }
+    .tasks-widget .task-list-projects li>.label {
+        margin-bottom: 5px
+    }
+}
+.mt-widget-2 {
+    border: 1px solid #e7ecf1;
+    position: relative;
+}
+.mt-widget-2 .mt-head {
+    position: absolute;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 180px;
+}
+.mt-widget-2 .mt-head .mt-head-label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+.mt-widget-2 .mt-head .mt-head-label>button {
+    font-size: 12px;
+    border-radius: 2px!important font-weight: normal;
+}
+.mt-widget-2 .mt-body {
+    padding-top: 160px;
+    text-align: center;
+}
+.mt-widget-2 .mt-body .mt-body-user .mt-body-user-info {
+    margin: 30px 0 0 0;
+    color: #333;
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+.portlet.light{
+      padding: 12px 20px 0 20px;
+      margin-bottom: 0;
+          margin-top: 50px;
+}
+.page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo{
+  width: 110px;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover, .page-sidebar{
+  background: #f9f9f9;
+  border-right: 1px solid #cccdce; 
+}
+
+/**********video***********/
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.sidebar-search-bordered .input-group, .page-sidebar .sidebar-search.sidebar-search-bordered .input-group{
+  border: 1px solid #e6e6e6;
+}
+.page-sidebar .sidebar-search.sidebar-search-bordered .input-group .form-control, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search.sidebar-search-bordered .input-group .form-control{
+  background: #fff;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .sidebar-search .input-group .input-group-btn .btn > i, .page-sidebar .sidebar-search .input-group .input-group-btn .btn > i{
+  color: #c4c5c5;
+}
+ .page-sidebar .page-sidebar-menu > li.open > a > i {
+color: #fd4f28;
+ }
+ .page-sidebar .page-sidebar-menu > li.open > a{
+  background: #fff;
+ }
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+    background: #fff !important;
+    font-weight: bold;
+}
+.page-sidebar .page-sidebar-menu .sub-menu > li > a {
+    color: #666;
+    background: #fff;
+    font-size: 13px;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a, .page-sidebar .page-sidebar-menu > li:hover > a, .page-sidebar .page-sidebar-menu > li.open > a {
+    background: #f9f9f9;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > i, .page-sidebar .page-sidebar-menu > li:hover > a > i, .page-sidebar .page-sidebar-menu > li.open > a > i{
+  color: #fd4f28;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a{
+  color: #333;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a{
+  background: #f9f9f9 !important;
+  color: #666;
+}
+.page-sidebar .page-sidebar-menu > li > a {
+      border-top: 1px solid #e8e8e8;
+}
+.page-sidebar .page-sidebar-menu .sub-menu, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu{
+  margin:0;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a, .page-sidebar .page-sidebar-menu .sub-menu > li > a{
+  background: #f9f9f9;
+  color: #333;
+  font-size: 13px;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a{
+  background: #eee!important;
+}
+.page-sidebar .page-sidebar-menu .sub-menu li, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li{
+  margin-top: 0px !important;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a, .page-sidebar .page-sidebar-menu > li > a{
+  border-top: 1px solid #eee;
+}
